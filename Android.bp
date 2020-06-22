@@ -33,12 +33,10 @@ cc_library_static {
         },
     },
     apex_available: [
+        "//apex_available:anyapex",
         "//apex_available:platform",
-        "com.android.neuralnetworks",
-        "test_com.android.neuralnetworks",
-        "com.android.os.statsd", // statically linked by libbase
-        "test_com.android.os.statsd",
     ],
+    min_sdk_version: "29",
 }
 
 cc_library_static {
