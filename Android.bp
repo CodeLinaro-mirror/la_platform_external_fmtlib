@@ -8,9 +8,6 @@ cc_defaults {
         // If built without exceptions, libfmt uses assert.
         "-UNDEBUG",
     ],
-    sanitize: {
-        misc_undefined: ["integer"],
-    },
     local_include_dirs: ["include"],
     export_include_dirs: ["include"],
 }
